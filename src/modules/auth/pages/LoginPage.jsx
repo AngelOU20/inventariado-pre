@@ -12,7 +12,7 @@ export const LoginPage = () => {
   };
 
   return (
-    <AuthLayout title={"Inicio de Sesión"}>
+    <AuthLayout>
       <form onSubmit={onSubmit}>
         <Grid container spacing={2} sx={{ mb: 2, mt: 1 }}>
           {/* Error Message */}

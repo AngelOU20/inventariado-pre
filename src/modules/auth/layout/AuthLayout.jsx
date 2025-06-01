@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-import { Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 
-export const AuthLayout = ({ children, title = "" }) => {
+export const AuthLayout = ({ children }) => {
   return (
     <Grid
       container
@@ -22,12 +22,20 @@ export const AuthLayout = ({ children, title = "" }) => {
           borderRadius: 2,
         }}
       >
-        <Typography
-          variant="h1"
-          sx={{ mb: 2, textAlign: "center", fontWeight: 600 }}
+        <Grid
+          container
+          direction="column"
+          alignItems="center"
+          justifyContent="center"
+          sx={{ mb: 2 }}
         >
-          {title}
-        </Typography>
+          <img
+            src="/logo_precision.png"
+            alt="logo PRECISION"
+            width={250}
+            style={{ margin: "16px" }}
+          />
+        </Grid>
 
         {children}
       </Grid>
