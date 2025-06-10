@@ -31,7 +31,7 @@ export const LoginPage = () => {
               gap: 1,
             }}
           >
-            Iniciar Sesión con Google
+            Iniciar Sesión con tu cuenta de Google
             <img
               src="/google.svg"
               alt="google-logo"
